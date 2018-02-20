@@ -1,0 +1,994 @@
+﻿Log file open, 11/08/17 21:06:44
+LogInit:Display: Running engine for game: TimeKill
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1089310513) SRandInit(1089310513).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 5.269313
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3450819
+LogInit: Engine Version: 4.15.3-3450819+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): May 21 2017 11:02:34
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  
+LogInit: Base directory: D:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.11.08-18.06.46:125][  0]LogInit: Selected Device Profile: [Windows]
+[2017.11.08-18.06.46:125][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.11.08-18.06.46:193][  0]LogInit: Computer: DESKTOP-S9EOI2C
+[2017.11.08-18.06.46:193][  0]LogInit: User: IzPOD
+[2017.11.08-18.06.46:193][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.11.08-18.06.46:193][  0]LogInit: High frequency timer resolution =3.312790 MHz
+[2017.11.08-18.06.46:193][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2017.11.08-18.06.46:193][  0]LogMemory: Platform Memory Stats for Windows
+[2017.11.08-18.06.46:193][  0]LogMemory: Process Physical Memory: 265.46 MB used, 265.46 MB peak
+[2017.11.08-18.06.46:193][  0]LogMemory: Process Virtual Memory: 262.30 MB used, 262.30 MB peak
+[2017.11.08-18.06.46:193][  0]LogMemory: Physical Memory: 4513.69 MB used,  3611.11 MB free, 8124.80 MB total
+[2017.11.08-18.06.46:193][  0]LogMemory: Virtual Memory: 677.91 MB used,  3611.11 MB free, 134217728.00 MB total
+[2017.11.08-18.06.47:044][  0]LogTextLocalizationManager: No translations for ('ru-RU') exist, falling back to 'en' for localization and internationalization data.
+[2017.11.08-18.06.51:402][  0]LogD3D11RHI: D3D11 adapters:
+[2017.11.08-18.06.52:029][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 670' (Feature Level 11_0)
+[2017.11.08-18.06.52:029][  0]LogD3D11RHI:       2017/0/4062 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.11.08-18.06.52:033][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.11.08-18.06.52:033][  0]LogD3D11RHI:       0/0/4062 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.11.08-18.06.52:033][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.11.08-18.06.52:037][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.11.08-18.06.52:037][  0]LogD3D11RHI:     GPU DeviceId: 0x1189 (for the marketing name, search the web for "GPU Device Id")
+[2017.11.08-18.06.52:037][  0]LogWindows: EnumDisplayDevices:
+[2017.11.08-18.06.52:037][  0]LogWindows:    0. 'NVIDIA GeForce GTX 670' (P:1 D:1)
+[2017.11.08-18.06.52:038][  0]LogWindows:    1. 'NVIDIA GeForce GTX 670' (P:0 D:0)
+[2017.11.08-18.06.52:038][  0]LogWindows:    2. 'NVIDIA GeForce GTX 670' (P:0 D:0)
+[2017.11.08-18.06.52:038][  0]LogWindows:    3. 'NVIDIA GeForce GTX 670' (P:0 D:0)
+[2017.11.08-18.06.52:038][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.11.08-18.06.52:038][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 670
+[2017.11.08-18.06.52:038][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.11.08-18.06.52:038][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.11.08-18.06.52:038][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.11.08-18.06.52:641][  0]LogD3D11RHI:Warning: Timestamp queries are currently disabled on this hardware due to instability. Realtime GPU stats will not be available. You can override this behaviour by setting r.NVIDIATimestampWorkaround to 0
+[2017.11.08-18.06.52:645][  0]LogD3D11RHI: Async texture creation enabled
+[2017.11.08-18.06.52:701][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.11.08-18.06.52:703][  0]LogShaderCompilers: Guid format shader working directory is -9 characters bigger than the processId version (../../../../../../P - programist/UE4/Timekill/TimeKill/Intermediate/Shaders/WorkingDirectory/12612/).
+[2017.11.08-18.06.52:703][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/IzPOD/AppData/Local/Temp/UnrealShaderWorkingDir/FBBF5C4440CCF8AF050FB6814CF64D5B/'.
+[2017.11.08-18.06.52:703][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.11.08-18.06.56:649][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.11.08-18.06.56:710][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.11.08-18.06.56:765][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.11.08-18.06.56:818][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.11.08-18.06.56:890][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.11.08-18.06.56:944][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.11.08-18.06.56:997][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.11.08-18.06.57:053][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.11.08-18.06.57:095][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.11.08-18.06.57:176][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.11.08-18.06.57:241][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.11.08-18.06.57:300][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.11.08-18.06.57:356][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.11.08-18.06.57:425][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.11.08-18.06.57:480][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.11.08-18.06.57:588][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.11.08-18.06.57:588][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.11.08-18.06.57:623][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.11.08-18.06.57:793][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.11.08-18.06.57:829][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.11.08-18.06.57:884][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.11.08-18.06.57:938][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.11.08-18.06.57:989][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.11.08-18.06.58:073][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.11.08-18.06.58:073][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.11.08-18.06.59:307][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.11.08-18.06.59:542][  0]LogDerivedDataCache: Loaded boot cache 0.24s 50MB C:/Users/IzPOD/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.11.08-18.06.59:542][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/IzPOD/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.11.08-18.06.59:542][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../P - programist/UE4/Timekill/TimeKill/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.11.08-18.06.59:542][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.11.08-18.06.59:542][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../P - programist/UE4/Timekill/TimeKill/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.11.08-18.06.59:542][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.11.08-18.06.59:652][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.11.08-18.06.59:664][  0]LogDerivedDataCache: Using Local data cache path C:/Users/IzPOD/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.11.08-18.06.59:675][  0]LogSlate: Using Freetype 2.6.0
+[2017.11.08-18.06.59:718][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.11.08-18.06.59:718][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.11.08-18.07.07:408][  0]LogInit: Selected Device Profile: [Windows]
+[2017.11.08-18.07.07:410][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.11.08-18.07.07:799][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.11.08-18.07.07:851][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.11.08-18.07.07:919][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.11.08-18.07.07:919][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.11.08-18.07.07:919][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.11.08-18.07.10:782][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: timekill, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 844999791
+[2017.11.08-18.07.10:850][  0]LogAssetRegistry: FAssetRegistry took 0.0331 seconds to start up
+[2017.11.08-18.07.10:952][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.082926 seconds
+[2017.11.08-18.07.10:958][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.11.08-18.07.10:958][  0]LogUObjectAllocator: 7077024 out of 0 bytes used by permanent object pool.
+[2017.11.08-18.07.10:958][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.11.08-18.07.11:015][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.11.08-18.07.21:673][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.11.08-18.07.21:730][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.11.08-18.07.23:004][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.11.08-18.07.23:643][  0]SourceControl: Info Source control is disabled
+[2017.11.08-18.07.23:644][  0]SourceControl: Info Source control is disabled
+[2017.11.08-18.07.23:738][  0]SourceControl: Info Source control is disabled
+[2017.11.08-18.07.23:796][  0]SourceControl: Info Source control is disabled
+[2017.11.08-18.07.24:414][  0]LogLinker:Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part1-Overview'
+[2017.11.08-18.07.24:422][  0]LogLinker:Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part1-Overview'
+[2017.11.08-18.07.24:423][  0]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/PuzzleBP/Tutorial/Part1-Overview.Part1-Overview_C'
+[2017.11.08-18.07.24:423][  0]LogLinker:Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part2-BlockBlueprint'
+[2017.11.08-18.07.24:423][  0]LogLinker:Warning: Can't find file '/Game/PuzzleBP/Tutorial/Part2-BlockBlueprint'
+[2017.11.08-18.07.24:423][  0]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/PuzzleBP/Tutorial/Part2-BlockBlueprint.Part2-BlockBlueprint_C'
+[2017.11.08-18.07.26:646][  0]LogEngine: Initializing Engine...
+[2017.11.08-18.07.26:664][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.11.08-18.07.27:295][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.11.08-18.07.27:295][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.11.08-18.07.27:678][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.11.08-18.07.27:782][  0]LogInit: XAudio2 using 'Динамики (Logitech G430 Gaming Headset)' : 8 channels at 48 kHz using 16 bits per sample (channel mask 0x63f)
+[2017.11.08-18.07.27:807][  0]LogInit: FAudioDevice initialized.
+[2017.11.08-18.07.27:833][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/IzPOD/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.11.08-18.07.27:840][  0]LogInit: Texture streaming: Enabled
+[2017.11.08-18.07.28:031][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.11.08-18.07.28:033][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=AbnormalShutdown, SessionId={C9AFF8F2-4FCD-6E79-6AED-02A7CEB43CF6}
+[2017.11.08-18.07.28:276][  0]LogInit: Transaction tracking system initialized
+[2017.11.08-18.07.28:744][  0]BlueprintLog: New page: Editor Load
+[2017.11.08-18.07.30:723][  0]LocalizationService: Info Localization service is disabled
+[2017.11.08-18.07.32:359][  0]LogConsoleResponse:Display: 
+[2017.11.08-18.07.35:381][  0]LogFileCache: Scanning file cache for directory 'D:/P - programist/UE4/Timekill/TimeKill/Content/' took 0.07s
+[2017.11.08-18.07.35:381][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.11.08-18.07.35:381][  0]LogCook:Display: Mobile HDR setting 0
+[2017.11.08-18.07.37:449][  0]SourceControl: Info Source control is disabled
+[2017.11.08-18.07.37:485][  0]Cmd: MAP LOAD FILE="../../../../../../P - programist/UE4/Timekill/TimeKill/Content/GameLavel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.11.08-18.07.37:547][  0]LightingResults: New page: Lighting Build
+[2017.11.08-18.07.37:944][  0]MapCheck: New page: Map Check
+[2017.11.08-18.07.37:944][  0]LightingResults: New page: Lighting Build
+[2017.11.08-18.07.42:144][  0]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.07.42:740][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.11.08-18.07.42:777][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.11.08-18.07.42:834][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 56.689ms to complete.
+[2017.11.08-18.07.42:834][  0]LogFileHelpers: Loading map 'GameLavel' took 5.362
+[2017.11.08-18.07.45:245][  0]LogCollectionManager: Loaded 1 collections in 0.020382 seconds
+[2017.11.08-18.07.45:406][  0]LogFileCache: Scanning file cache for directory 'D:/P - programist/UE4/Timekill/TimeKill/Saved/Collections/' took 0.01s
+[2017.11.08-18.07.45:407][  0]LogFileCache: Scanning file cache for directory 'D:/P - programist/UE4/Timekill/TimeKill/Content/Developers/IzPOD/Collections/' took 0.01s
+[2017.11.08-18.07.45:407][  0]LogFileCache: Scanning file cache for directory 'D:/P - programist/UE4/Timekill/TimeKill/Content/Collections/' took 0.01s
+[2017.11.08-18.07.45:407][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000006 seconds
+[2017.11.08-18.07.45:407][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000000 seconds
+[2017.11.08-18.07.45:440][  0]LogContentBrowser: Native class hierarchy populated in 0.0306 seconds. Added 2246 classes and 455 folders.
+[2017.11.08-18.07.45:570][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.11.08-18.07.46:495][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.11.08-18.07.46:561][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.11.08-18.07.46:775][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.11.08-18.07.46:949][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2017.11.08-18.07.46:949][  0]LogLoad: (Engine Initialization) Total time: 77.52 seconds
+[2017.11.08-18.07.46:949][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.68 seconds
+[2017.11.08-18.07.46:949][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.11.08-18.07.47:323][  0]LogOcInput: OculusInput pre-init called
+[2017.11.08-18.07.47:640][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.11.08-18.07.47:780][  0]LogSlate: Took 0.014470 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.11.08-18.07.47:818][  0]LogSlate: Took 0.017215 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.11.08-18.07.47:885][  0]LogSlate: Took 0.017165 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.11.08-18.07.48:242][  0]LogRenderer: Reallocating scene render targets to support 1068x924 NumSamples 1 (Frame:2).
+[2017.11.08-18.07.48:619][  0]LogSlate: Took 0.024383 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.11.08-18.07.49:117][  2]LogSlate: Took 0.000321 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.11.08-18.07.49:432][  3]LogAssetRegistry: Asset discovery search completed in 38.6049 seconds
+[2017.11.08-18.07.49:450][  3]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.018113 seconds (found 0 objects)
+[2017.11.08-18.07.49:450][  3]LogCollectionManager: Fixed up redirectors for 1 collections in 0.018160 seconds (updated 0 objects)
+[2017.11.08-18.09.25:164][904]LogEditorViewport: Clicking Background
+[2017.11.08-18.09.27:511][165]LogEditorViewport: Clicking Background
+[2017.11.08-18.09.31:568][612]LogEditorActor: Deleted Actor: Mishen_C
+[2017.11.08-18.09.31:617][612]LogEditorActor: Deleted Actor: Mishen_C
+[2017.11.08-18.09.31:618][612]LogEditorActor: Deleted Actor: Mishen_C
+[2017.11.08-18.09.31:618][612]LogEditorActor: Deleted Actor: Mishen_C
+[2017.11.08-18.09.31:726][612]LogEditorActor: Deleted 4 Actors (0.179 secs)
+[2017.11.08-18.09.32:733][728]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-18.09.32:775][728]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.09.32:775][728]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-18.09.32:807][728]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 12:09:32 AM)
+[2017.11.08-18.09.32:826][728]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-18.09.32:838][728]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012307s)
+[2017.11.08-18.09.32:839][728]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.09.32:839][728]LogPlayLevel: PIE: World Init took: (0.000697s)
+[2017.11.08-18.09.32:839][728]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.015833s)
+[2017.11.08-18.09.32:853][728]LogInit: XAudio2 using 'Динамики (Logitech G430 Gaming Headset)' : 8 channels at 48 kHz using 16 bits per sample (channel mask 0x63f)
+[2017.11.08-18.09.32:866][728]LogInit: FAudioDevice initialized.
+[2017.11.08-18.09.32:980][728]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-18.09.33:038][728]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-21.09.33
+[2017.11.08-18.09.33:114][728]LogWorld: Bringing up level for play took: 0.090796
+[2017.11.08-18.09.33:213][728]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 11 classes and 0 folders.
+[2017.11.08-18.09.33:355][728]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:08FE
+[2017.11.08-18.09.33:355][728]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-18.09.33:356][728]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:0922
+[2017.11.08-18.09.33:356][728]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-18.09.33:356][728]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:0946
+[2017.11.08-18.09.33:356][728]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-18.09.33:356][728]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:096A
+[2017.11.08-18.09.33:356][728]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-18.09.33:373][728]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel 0.671
+[2017.11.08-18.09.33:381][728]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.09.33:519][728]LogRenderer: Reallocating scene render targets to support 1068x996 NumSamples 1 (Frame:178).
+[2017.11.08-18.09.34:416][827]LogScript:Warning: Accessed None trying to read property Win_or_Lose_Variable
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:0D9D
+[2017.11.08-18.09.34:416][827]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property Win_or_Lose_Variable from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property Win_or_Lose_Variable
+[2017.11.08-18.09.48:240][464]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.09.48:312][464]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.10.00:554][853]LoadErrors:Error: Error /Game/NewFolder/Mouse_GameMode : Failed import for Blueprint /Game/Mouse_controll/Mouse_GameMode.Mouse_GameMode
+[2017.11.08-18.13.43:517][590]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.11.08-18.13.43:517][590]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.11.08-18.13.45:191][774]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-18.13.45:214][774]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.13.45:214][774]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-18.13.45:214][774]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 12:13:45 AM)
+[2017.11.08-18.13.45:215][774]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-18.13.45:217][774]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002574s)
+[2017.11.08-18.13.45:218][774]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.13.45:218][774]LogPlayLevel: PIE: World Init took: (0.000847s)
+[2017.11.08-18.13.45:218][774]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.003635s)
+[2017.11.08-18.13.45:232][774]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-18.13.45:239][774]LogInit: FAudioDevice initialized.
+[2017.11.08-18.13.45:288][774]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-18.13.45:290][774]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-21.13.45
+[2017.11.08-18.13.45:290][774]LogWorld: Bringing up level for play took: 0.001544
+[2017.11.08-18.13.45:293][774]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:08FE
+[2017.11.08-18.13.45:293][774]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-18.13.45:293][774]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:0922
+[2017.11.08-18.13.45:293][774]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-18.13.45:293][774]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:0946
+[2017.11.08-18.13.45:293][774]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-18.13.45:293][774]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:096A
+[2017.11.08-18.13.45:293][774]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-18.13.45:299][774]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel 0.596
+[2017.11.08-18.13.45:316][774]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.13.47:212][992]LogScript:Warning: Accessed None trying to read property Win_or_Lose_Variable
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:0D9D
+[2017.11.08-18.13.47:212][992]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property Win_or_Lose_Variable from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property Win_or_Lose_Variable
+[2017.11.08-18.13.50:240][304]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.13.50:272][304]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.13.50:979][383]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-18.13.50:999][383]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.13.50:999][383]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-18.13.50:999][383]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 12:13:50 AM)
+[2017.11.08-18.13.51:000][383]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-18.13.51:002][383]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002156s)
+[2017.11.08-18.13.51:002][383]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.13.51:003][383]LogPlayLevel: PIE: World Init took: (0.000747s)
+[2017.11.08-18.13.51:003][383]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.003088s)
+[2017.11.08-18.13.51:018][383]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-18.13.51:024][383]LogInit: FAudioDevice initialized.
+[2017.11.08-18.13.51:068][383]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-18.13.51:070][383]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-21.13.51
+[2017.11.08-18.13.51:070][383]LogWorld: Bringing up level for play took: 0.001550
+[2017.11.08-18.13.51:089][383]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:08FE
+[2017.11.08-18.13.51:089][383]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-18.13.51:089][383]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:0922
+[2017.11.08-18.13.51:089][383]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-18.13.51:089][383]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:0946
+[2017.11.08-18.13.51:089][383]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-18.13.51:089][383]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:096A
+[2017.11.08-18.13.51:089][383]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-18.13.51:094][383]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel 0.392
+[2017.11.08-18.13.51:095][383]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.14.20:047][171]LogRenderer: Reallocating scene render targets to support 1356x996 NumSamples 1 (Frame:5281).
+[2017.11.08-18.14.30:445][115]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.14.30:476][115]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.14.36:568][824]LogSlate: Took 0.000174 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.11.08-18.14.37:341][824]LogSlate: Took 0.000184 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.11.08-18.14.37:666][824]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0013 seconds. Added 112 classes and 0 folders.
+[2017.11.08-18.14.40:117][824]LogSlate: Took 0.018455 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.11.08-18.15.48:314][813]BlueprintLog: New page: Compile WidgetBlueprint
+[2017.11.08-18.15.49:144][865]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-18.15.49:175][865]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.15.49:175][865]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-18.15.49:175][865]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 12:15:49 AM)
+[2017.11.08-18.15.49:176][865]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-18.15.49:178][865]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002194s)
+[2017.11.08-18.15.49:179][865]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.15.49:179][865]LogPlayLevel: PIE: World Init took: (0.000705s)
+[2017.11.08-18.15.49:179][865]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.003088s)
+[2017.11.08-18.15.49:211][865]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-18.15.49:218][865]LogInit: FAudioDevice initialized.
+[2017.11.08-18.15.49:259][865]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-18.15.49:261][865]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-21.15.49
+[2017.11.08-18.15.49:261][865]LogWorld: Bringing up level for play took: 0.001454
+[2017.11.08-18.15.49:263][865]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:08FE
+[2017.11.08-18.15.49:263][865]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-18.15.49:264][865]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:0922
+[2017.11.08-18.15.49:264][865]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-18.15.49:264][865]LogScript:Warning: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+	Player1_C /Game/UEDPIE_0_GameLavel.GameLavel:PersistentLevel.Player1_97
+	Function /Game/Blueprints/Player1.Player1_C:ExecuteUbergraph_Player1:0946
+[2017.11.08-18.15.49:264][865]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-18.15.49:264][865]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-18.15.49:267][865]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel 0.565
+[2017.11.08-18.15.49:268][865]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.15.52:422][208]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.15.52:456][208]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.16.30:724][721]BlueprintLog: New page: Compile WidgetBlueprint
+[2017.11.08-18.16.31:322][763]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-18.16.31:345][763]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.16.31:345][763]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-18.16.31:345][763]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 12:16:31 AM)
+[2017.11.08-18.16.31:346][763]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-18.16.31:348][763]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002496s)
+[2017.11.08-18.16.31:349][763]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.16.31:350][763]LogPlayLevel: PIE: World Init took: (0.001078s)
+[2017.11.08-18.16.31:350][763]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.003801s)
+[2017.11.08-18.16.31:367][763]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-18.16.31:372][763]LogInit: FAudioDevice initialized.
+[2017.11.08-18.16.31:418][763]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-18.16.31:420][763]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-21.16.31
+[2017.11.08-18.16.31:420][763]LogWorld: Bringing up level for play took: 0.001380
+[2017.11.08-18.16.31:422][763]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-18.16.31:422][763]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-18.16.31:422][763]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-18.16.31:423][763]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-18.16.31:426][763]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel 0.724
+[2017.11.08-18.16.31:427][763]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.16.49:225][389]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.16.49:258][389]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.17.04:125][141]BlueprintLog: New page: Compile WidgetBlueprint
+[2017.11.08-18.17.04:683][177]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-18.17.04:708][177]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.17.04:708][177]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-18.17.04:708][177]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 12:17:04 AM)
+[2017.11.08-18.17.04:709][177]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-18.17.04:711][177]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002455s)
+[2017.11.08-18.17.04:712][177]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.17.04:712][177]LogPlayLevel: PIE: World Init took: (0.000800s)
+[2017.11.08-18.17.04:712][177]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.003484s)
+[2017.11.08-18.17.04:730][177]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-18.17.04:736][177]LogInit: FAudioDevice initialized.
+[2017.11.08-18.17.04:780][177]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-18.17.04:782][177]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-21.17.04
+[2017.11.08-18.17.04:782][177]LogWorld: Bringing up level for play took: 0.001408
+[2017.11.08-18.17.04:796][177]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-18.17.04:796][177]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-18.17.04:796][177]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-18.17.04:796][177]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-18.17.04:800][177]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel 0.097
+[2017.11.08-18.17.04:800][177]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.17.13:160][937]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.17.13:192][937]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.17.25:889][427]BlueprintLog: New page: Compile WidgetBlueprint
+[2017.11.08-18.17.26:452][465]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-18.17.26:476][465]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.17.26:476][465]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-18.17.26:476][465]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 12:17:26 AM)
+[2017.11.08-18.17.26:476][465]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-18.17.26:479][465]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002228s)
+[2017.11.08-18.17.26:479][465]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.17.26:479][465]LogPlayLevel: PIE: World Init took: (0.000843s)
+[2017.11.08-18.17.26:480][465]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.003316s)
+[2017.11.08-18.17.26:498][465]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-18.17.26:504][465]LogInit: FAudioDevice initialized.
+[2017.11.08-18.17.26:549][465]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-18.17.26:552][465]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-21.17.26
+[2017.11.08-18.17.26:552][465]LogWorld: Bringing up level for play took: 0.001888
+[2017.11.08-18.17.26:555][465]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-18.17.26:555][465]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-18.17.26:555][465]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-18.17.26:555][465]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-18.17.26:559][465]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel -0.143
+[2017.11.08-18.17.26:560][465]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.17.29:602][757]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.17.29:634][757]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.17.33:439][196]BlueprintLog: New page: Compile WidgetBlueprint
+[2017.11.08-18.17.34:152][250]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-18.17.34:175][250]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.17.34:175][250]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-18.17.34:175][250]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 12:17:34 AM)
+[2017.11.08-18.17.34:176][250]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-18.17.34:178][250]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002207s)
+[2017.11.08-18.17.34:179][250]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.17.34:179][250]LogPlayLevel: PIE: World Init took: (0.000727s)
+[2017.11.08-18.17.34:179][250]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.003163s)
+[2017.11.08-18.17.34:201][250]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-18.17.34:208][250]LogInit: FAudioDevice initialized.
+[2017.11.08-18.17.34:248][250]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-18.17.34:250][250]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-21.17.34
+[2017.11.08-18.17.34:251][250]LogWorld: Bringing up level for play took: 0.001971
+[2017.11.08-18.17.34:253][250]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-18.17.34:253][250]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-18.17.34:253][250]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-18.17.34:253][250]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-18.17.34:257][250]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel -0.445
+[2017.11.08-18.17.34:258][250]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.18.08:731][400]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.18.08:760][400]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.18.12:765][863]BlueprintLog: New page: Compile WidgetBlueprint
+[2017.11.08-18.18.13:301][896]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-18.18.13:323][896]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.18.13:323][896]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-18.18.13:323][896]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 12:18:13 AM)
+[2017.11.08-18.18.13:324][896]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-18.18.13:326][896]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002562s)
+[2017.11.08-18.18.13:327][896]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.18.13:327][896]LogPlayLevel: PIE: World Init took: (0.001017s)
+[2017.11.08-18.18.13:327][896]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.003821s)
+[2017.11.08-18.18.13:346][896]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-18.18.13:352][896]LogInit: FAudioDevice initialized.
+[2017.11.08-18.18.13:393][896]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-18.18.13:395][896]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-21.18.13
+[2017.11.08-18.18.13:395][896]LogWorld: Bringing up level for play took: 0.001395
+[2017.11.08-18.18.13:397][896]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-18.18.13:397][896]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-18.18.13:397][896]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-18.18.13:397][896]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-18.18.13:401][896]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel 0.698
+[2017.11.08-18.18.13:401][896]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.18.17:455][262]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.18.17:487][262]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.19.03:870][763]BlueprintLog: New page: Compile WidgetBlueprint
+[2017.11.08-18.19.04:401][797]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-18.19.04:423][797]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.19.04:423][797]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-18.19.04:423][797]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 12:19:04 AM)
+[2017.11.08-18.19.04:424][797]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-18.19.04:426][797]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002441s)
+[2017.11.08-18.19.04:427][797]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.19.04:427][797]LogPlayLevel: PIE: World Init took: (0.000813s)
+[2017.11.08-18.19.04:427][797]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.003483s)
+[2017.11.08-18.19.04:446][797]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-18.19.04:452][797]LogInit: FAudioDevice initialized.
+[2017.11.08-18.19.04:492][797]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-18.19.04:494][797]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-21.19.04
+[2017.11.08-18.19.04:495][797]LogWorld: Bringing up level for play took: 0.001848
+[2017.11.08-18.19.04:497][797]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-18.19.04:497][797]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-18.19.04:497][797]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-18.19.04:498][797]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-18.19.04:501][797]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel -0.201
+[2017.11.08-18.19.04:502][797]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.19.06:631][  1]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.19.06:665][  1]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.19.36:708][534]BlueprintLog: New page: Compile WidgetBlueprint
+[2017.11.08-18.19.37:365][584]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-18.19.37:388][584]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.19.37:388][584]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-18.19.37:388][584]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 12:19:37 AM)
+[2017.11.08-18.19.37:388][584]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-18.19.37:391][584]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002490s)
+[2017.11.08-18.19.37:391][584]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.19.37:392][584]LogPlayLevel: PIE: World Init took: (0.000763s)
+[2017.11.08-18.19.37:392][584]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.003487s)
+[2017.11.08-18.19.37:409][584]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-18.19.37:415][584]LogInit: FAudioDevice initialized.
+[2017.11.08-18.19.37:457][584]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-18.19.37:459][584]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-21.19.37
+[2017.11.08-18.19.37:460][584]LogWorld: Bringing up level for play took: 0.001710
+[2017.11.08-18.19.37:462][584]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-18.19.37:462][584]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-18.19.37:462][584]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-18.19.37:463][584]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-18.19.37:467][584]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel 0.764
+[2017.11.08-18.19.37:467][584]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.19.52:758][885]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.19.52:791][885]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.20.05:283][329]BlueprintLog: New page: Compile WidgetBlueprint
+[2017.11.08-18.20.05:928][376]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-18.20.05:951][376]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.20.05:951][376]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-18.20.05:952][376]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 12:20:05 AM)
+[2017.11.08-18.20.05:952][376]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-18.20.05:954][376]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002190s)
+[2017.11.08-18.20.05:955][376]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.20.05:955][376]LogPlayLevel: PIE: World Init took: (0.000875s)
+[2017.11.08-18.20.05:955][376]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.003270s)
+[2017.11.08-18.20.05:973][376]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-18.20.05:979][376]LogInit: FAudioDevice initialized.
+[2017.11.08-18.20.06:024][376]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-18.20.06:026][376]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-21.20.06
+[2017.11.08-18.20.06:027][376]LogWorld: Bringing up level for play took: 0.001756
+[2017.11.08-18.20.06:029][376]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-18.20.06:029][376]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-18.20.06:029][376]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-18.20.06:029][376]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-18.20.06:033][376]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel -0.669
+[2017.11.08-18.20.06:034][376]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.20.12:220][824]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.20.12:248][824]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.20.20:383][752]BlueprintLog: New page: Compile WidgetBlueprint
+[2017.11.08-18.20.20:997][795]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-18.20.21:018][795]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.20.21:018][795]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-18.20.21:019][795]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 12:20:21 AM)
+[2017.11.08-18.20.21:019][795]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-18.20.21:021][795]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002346s)
+[2017.11.08-18.20.21:022][795]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.20.21:022][795]LogPlayLevel: PIE: World Init took: (0.000753s)
+[2017.11.08-18.20.21:022][795]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.003311s)
+[2017.11.08-18.20.21:041][795]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-18.20.21:046][795]LogInit: FAudioDevice initialized.
+[2017.11.08-18.20.21:089][795]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-18.20.21:091][795]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-21.20.21
+[2017.11.08-18.20.21:092][795]LogWorld: Bringing up level for play took: 0.001750
+[2017.11.08-18.20.21:094][795]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-18.20.21:094][795]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-18.20.21:094][795]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-18.20.21:095][795]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-18.20.21:098][795]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel 0.396
+[2017.11.08-18.20.21:099][795]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.20.31:314][610]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.20.31:342][610]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.20.37:005][263]BlueprintLog: New page: Compile WidgetBlueprint
+[2017.11.08-18.20.37:556][300]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-18.20.37:579][300]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.20.37:579][300]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-18.20.37:580][300]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 12:20:37 AM)
+[2017.11.08-18.20.37:580][300]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-18.20.37:582][300]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002213s)
+[2017.11.08-18.20.37:583][300]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.20.37:583][300]LogPlayLevel: PIE: World Init took: (0.000701s)
+[2017.11.08-18.20.37:583][300]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.003125s)
+[2017.11.08-18.20.37:601][300]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-18.20.37:607][300]LogInit: FAudioDevice initialized.
+[2017.11.08-18.20.37:651][300]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-18.20.37:653][300]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-21.20.37
+[2017.11.08-18.20.37:653][300]LogWorld: Bringing up level for play took: 0.001571
+[2017.11.08-18.20.37:655][300]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-18.20.37:656][300]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-18.20.37:656][300]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-18.20.37:656][300]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-18.20.37:659][300]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel 0.957
+[2017.11.08-18.20.37:660][300]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.20.41:480][646]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.20.41:509][646]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.20.57:213][461]BlueprintLog: New page: Compile WidgetBlueprint
+[2017.11.08-18.20.57:814][504]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-18.20.57:837][504]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.20.57:837][504]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-18.20.57:838][504]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 12:20:57 AM)
+[2017.11.08-18.20.57:838][504]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-18.20.57:840][504]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002377s)
+[2017.11.08-18.20.57:841][504]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.20.57:841][504]LogPlayLevel: PIE: World Init took: (0.000776s)
+[2017.11.08-18.20.57:841][504]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.003387s)
+[2017.11.08-18.20.57:860][504]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-18.20.57:867][504]LogInit: FAudioDevice initialized.
+[2017.11.08-18.20.57:910][504]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-18.20.57:912][504]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-21.20.57
+[2017.11.08-18.20.57:913][504]LogWorld: Bringing up level for play took: 0.001523
+[2017.11.08-18.20.57:915][504]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-18.20.57:915][504]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-18.20.57:915][504]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-18.20.57:915][504]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-18.20.57:920][504]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel -0.783
+[2017.11.08-18.20.57:920][504]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.21.11:023][581]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.21.11:055][581]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.21.13:298][837]BlueprintLog: New page: Compile WidgetBlueprint
+[2017.11.08-18.21.45:686][344]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-18.21.45:711][344]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.21.45:711][344]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-18.21.45:711][344]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 12:21:45 AM)
+[2017.11.08-18.21.45:712][344]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-18.21.45:714][344]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002335s)
+[2017.11.08-18.21.45:714][344]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-18.21.45:715][344]LogPlayLevel: PIE: World Init took: (0.000780s)
+[2017.11.08-18.21.45:715][344]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.003323s)
+[2017.11.08-18.21.45:733][344]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-18.21.45:739][344]LogInit: FAudioDevice initialized.
+[2017.11.08-18.21.45:785][344]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-18.21.45:787][344]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-21.21.45
+[2017.11.08-18.21.45:788][344]LogWorld: Bringing up level for play took: 0.001451
+[2017.11.08-18.21.45:790][344]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-18.21.45:790][344]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-18.21.45:790][344]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-18.21.45:790][344]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-18.21.45:795][344]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel -0.907
+[2017.11.08-18.21.45:796][344]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.21.47:597][547]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property Win_or_Lose_Variable from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property Win_or_Lose_Variable
+[2017.11.08-18.22.02:109][260]PIE:Error: Error Blueprint Runtime Error: Attempted to access Mishen_C_7 via property CallFunc_FinishSpawningActor_ReturnValue2, but Mishen_C_7 is pending kill from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Attempted to access Mishen_C_7 via property CallFunc_FinishSpawningActor_ReturnValue2, but Mishen_C_7 is pending kill
+[2017.11.08-18.22.02:109][260]PIE:Error: Error Blueprint Runtime Error: Attempted to access Mishen_C_6 via property CallFunc_FinishSpawningActor_ReturnValue, but Mishen_C_6 is pending kill from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Attempted to access Mishen_C_6 via property CallFunc_FinishSpawningActor_ReturnValue, but Mishen_C_6 is pending kill
+[2017.11.08-18.22.02:109][260]PIE:Error: Error Blueprint Runtime Error: Attempted to access Mishen_C_5 via property CallFunc_FinishSpawningActor_ReturnValue3, but Mishen_C_5 is pending kill from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Attempted to access Mishen_C_5 via property CallFunc_FinishSpawningActor_ReturnValue3, but Mishen_C_5 is pending kill
+[2017.11.08-18.22.02:109][260]PIE:Error: Error Blueprint Runtime Error: Attempted to access Mishen_C_4 via property CallFunc_FinishSpawningActor_ReturnValue4, but Mishen_C_4 is pending kill from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Attempted to access Mishen_C_4 via property CallFunc_FinishSpawningActor_ReturnValue4, but Mishen_C_4 is pending kill
+[2017.11.08-18.22.02:111][260]PIE:Error: Error Blueprint Runtime Error: Attempted to access Otschet_C_1 via property Krug_Otscheta, but Otschet_C_1 is pending kill from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Attempted to access Otschet_C_1 via property Krug_Otscheta, but Otschet_C_1 is pending kill
+[2017.11.08-18.22.03:532][424]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.22.03:566][424]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-18.22.29:189][586]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/GameLavel" FILE="../../../../../../P - programist/UE4/Timekill/TimeKill/Saved/Autosaves/Game/GameLavel_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2017.11.08-18.22.29:484][586]LogSavePackage: Save=257.72ms
+[2017.11.08-18.22.29:485][586]LogSavePackage: Moving '../../../../../../P - programist/UE4/Timekill/TimeKill/Saved/GameLavel_Auto141C72C06408762BE657A949F65382155.tmp' to '../../../../../../P - programist/UE4/Timekill/TimeKill/Saved/Autosaves/Game/GameLavel_Auto1.umap'
+[2017.11.08-18.22.29:502][586]LogSavePackage:Display: Finished SavePackage ../../../../../../P - programist/UE4/Timekill/TimeKill/Saved/Autosaves/Game/GameLavel_Auto1.umap
+[2017.11.08-18.22.29:504][586]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/GameLavel' took 0.397
+[2017.11.08-18.22.29:504][586]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.397
+[2017.11.08-18.22.29:506][586]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/WidgetBlueprint] ([1] browsable assets)...
+[2017.11.08-18.22.29:506][586]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/WidgetBlueprint]
+[2017.11.08-18.22.29:571][586]LogSavePackage: Save=41.41ms
+[2017.11.08-18.22.29:571][586]LogSavePackage: Moving '../../../../../../P - programist/UE4/Timekill/TimeKill/Saved/WidgetBlueprint_Auto11BD0C5D14294CF269168EB94EE774290.tmp' to '../../../../../../P - programist/UE4/Timekill/TimeKill/Saved/Autosaves/Game/Blueprints/WidgetBlueprint_Auto1.uasset'
+[2017.11.08-18.22.29:573][586]LogSavePackage:Display: Finished SavePackage ../../../../../../P - programist/UE4/Timekill/TimeKill/Saved/Autosaves/Game/Blueprints/WidgetBlueprint_Auto1.uasset
+[2017.11.08-18.22.29:573][586]LogFileHelpers: Auto-saving content packages took 0.067
+[2017.11.08-18.26.47:268][361]LogHttp:Warning: 000002D291732F80: request failed, libcurl error: 0 (No error)
+[2017.11.08-18.26.47:268][361]LogHttp:Warning: 000002D291732F80: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x2d280e9ff28 [can pipeline])
+[2017.11.08-18.26.47:268][361]LogHttp:Warning: 000002D291732F80: libcurl info message cache 1 (Re-using existing connection! (#7) with host datarouter.ol.epicgames.com)
+[2017.11.08-18.26.47:268][361]LogHttp:Warning: 000002D291732F80: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (52.206.161.86) port 443 (#7))
+[2017.11.08-18.26.47:268][361]LogHttp:Warning: 000002D291732F80: libcurl info message cache 3 (upload completely sent off: 337 out of 337 bytes)
+[2017.11.08-18.26.47:268][361]LogHttp:Warning: 000002D291732F80: libcurl info message cache 4 (Closing connection 7)
+[2017.11.08-18.26.47:268][361]LogHttp:Warning: 000002D291732F80: libcurl info message cache 5 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.11.08-19.25.04:086][519]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-19.25.04:183][519]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-19.25.04:183][519]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-19.25.04:183][519]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 1:25:04 AM)
+[2017.11.08-19.25.04:186][519]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-19.25.04:203][519]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016020s)
+[2017.11.08-19.25.04:206][519]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-19.25.04:208][519]LogPlayLevel: PIE: World Init took: (0.004710s)
+[2017.11.08-19.25.04:208][519]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.021503s)
+[2017.11.08-19.25.04:264][519]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-19.25.04:274][519]LogInit: FAudioDevice initialized.
+[2017.11.08-19.25.04:332][519]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-19.25.04:335][519]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-22.25.04
+[2017.11.08-19.25.04:336][519]LogWorld: Bringing up level for play took: 0.002732
+[2017.11.08-19.25.04:342][519]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-19.25.04:342][519]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-19.25.04:342][519]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-19.25.04:342][519]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-19.25.04:348][519]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel -0.354
+[2017.11.08-19.25.04:349][519]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-19.25.22:538][ 37]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property Win_or_Lose_Variable from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property Win_or_Lose_Variable
+[2017.11.08-19.25.39:795][ 46]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-19.25.39:828][ 46]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-19.50.54:092][719]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.11.08-19.50.54:118][719]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-19.50.54:118][719]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.08-19.50.54:118][719]PIE: New page: PIE session: GameLavel (Nov 9, 2017, 1:50:54 AM)
+[2017.11.08-19.50.54:119][719]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLavel
+[2017.11.08-19.50.54:122][719]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002899s)
+[2017.11.08-19.50.54:123][719]LogAIModule: Creating AISystem for world GameLavel
+[2017.11.08-19.50.54:123][719]LogPlayLevel: PIE: World Init took: (0.001728s)
+[2017.11.08-19.50.54:123][719]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLavel.GameLavel to /Game/UEDPIE_0_GameLavel.GameLavel (0.004890s)
+[2017.11.08-19.50.54:142][719]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.08-19.50.54:149][719]LogInit: FAudioDevice initialized.
+[2017.11.08-19.50.54:197][719]LogLoad: Game class is 'Mouse_GameMode_C'
+[2017.11.08-19.50.54:199][719]LogWorld: Bringing World /Game/UEDPIE_0_GameLavel.GameLavel up for play (max tick rate 0) at 2017.11.08-22.50.54
+[2017.11.08-19.50.54:200][719]LogWorld: Bringing up level for play took: 0.001583
+[2017.11.08-19.50.54:202][719]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue2
+[2017.11.08-19.50.54:203][719]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue
+[2017.11.08-19.50.54:203][719]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue3
+[2017.11.08-19.50.54:203][719]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4 from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property CallFunc_FinishSpawningActor_ReturnValue4
+[2017.11.08-19.50.54:208][719]PIE: Info Play in editor start time for /Game/UEDPIE_0_GameLavel -0.494
+[2017.11.08-19.50.54:209][719]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-19.50.54:846][785]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property Win_or_Lose_Variable from function: 'ExecuteUbergraph_Player1' from node: DestroyActor in graph: EventGraph in object: Player1 with description: Accessed None trying to read property Win_or_Lose_Variable
+[2017.11.08-19.50.56:134][933]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-19.50.56:164][933]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/GameLavel.GameLavel:PersistentLevel' has LevelScriptBlueprint '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel' with GeneratedClass '/Game/GameLavel.GameLavel_C' with ClassGeneratedBy '/Game/GameLavel.GameLavel:PersistentLevel.GameLavel'
+[2017.11.08-19.51.25:985][993]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/WidgetBlueprint" FILE="../../../../../../P - programist/UE4/Timekill/TimeKill/Content/Blueprints/WidgetBlueprint.uasset" SILENT=true
+[2017.11.08-19.51.26:043][993]LogSavePackage: Save=32.10ms
+[2017.11.08-19.51.26:044][993]LogSavePackage: Moving '../../../../../../P - programist/UE4/Timekill/TimeKill/Saved/WidgetBlueprint5E568D934A1E5616643621B4B53D7B47.tmp' to '../../../../../../P - programist/UE4/Timekill/TimeKill/Content/Blueprints/WidgetBlueprint.uasset'
+[2017.11.08-19.51.26:049][993]LogSavePackage:Display: Finished SavePackage ../../../../../../P - programist/UE4/Timekill/TimeKill/Content/Blueprints/WidgetBlueprint.uasset
+[2017.11.08-19.51.26:114][993]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/GameLavel" FILE="../../../../../../P - programist/UE4/Timekill/TimeKill/Content/GameLavel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.11.08-19.51.26:305][993]LogSavePackage: Save=151.31ms
+[2017.11.08-19.51.26:305][993]LogSavePackage: Moving '../../../../../../P - programist/UE4/Timekill/TimeKill/Saved/GameLavel0548651D46EF9086645C4BBA5E2C6960.tmp' to '../../../../../../P - programist/UE4/Timekill/TimeKill/Content/GameLavel.umap'
+[2017.11.08-19.51.26:307][993]LogSavePackage:Display: Finished SavePackage ../../../../../../P - programist/UE4/Timekill/TimeKill/Content/GameLavel.umap
+[2017.11.08-19.51.26:352][993]LogFileHelpers: Saving map 'GameLavel' took 0.299
+[2017.11.08-19.51.27:350][994]Cmd: QUIT_EDITOR
+[2017.11.08-19.51.28:305][994]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.11.08-19.51.28:418][994]LogExit: Preparing to exit.
+[2017.11.08-19.51.29:495][994]LogDirectoryWatcher: A directory notification for 'D:/P - programist/UE4/Timekill/TimeKill/Content/' was aborted.
+[2017.11.08-19.51.29:851][994]LogExit: Editor shut down
+[2017.11.08-19.51.29:852][994]LogExit: Transaction tracking system shut down
+[2017.11.08-19.51.31:982][994]LogObj: Freed 0b from 0 cluster array pools.
+[2017.11.08-19.51.31:982][994]LogExit: Object subsystem successfully closed.
+[2017.11.08-19.51.32:188][994]LogD3D11RHI: Shutdown
+[2017.11.08-19.51.32:188][994]LogD3D11RHI: CleanupD3DDevice
+[2017.11.08-19.51.32:341][994]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.11.08-19.51.33:235][994]LogModuleManager: Shutting down and abandoning module SequencerWidgets (506)
+[2017.11.08-19.51.33:235][994]LogModuleManager: Shutting down and abandoning module BlueprintGraph (504)
+[2017.11.08-19.51.33:235][994]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (502)
+[2017.11.08-19.51.33:257][994]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (500)
+[2017.11.08-19.51.33:257][994]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2017.11.08-19.51.33:268][994]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2017.11.08-19.51.33:268][994]LogModuleManager: Shutting down and abandoning module AddContentDialog (494)
+[2017.11.08-19.51.33:282][994]LogDirectoryWatcher: A directory notification for 'D:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.11.08-19.51.33:290][994]LogModuleManager: Shutting down and abandoning module WidgetCarousel (493)
+[2017.11.08-19.51.33:290][994]LogModuleManager: Shutting down and abandoning module EditorWidgets (490)
+[2017.11.08-19.51.33:290][994]LogModuleManager: Shutting down and abandoning module CollectionManager (488)
+[2017.11.08-19.51.33:298][994]LogDirectoryWatcher: A directory notification for 'D:/P - programist/UE4/Timekill/TimeKill/Content/Collections/' was aborted.
+[2017.11.08-19.51.33:298][994]LogDirectoryWatcher: A directory notification for 'D:/P - programist/UE4/Timekill/TimeKill/Content/Developers/IzPOD/Collections/' was aborted.
+[2017.11.08-19.51.33:298][994]LogDirectoryWatcher: A directory notification for 'D:/P - programist/UE4/Timekill/TimeKill/Saved/Collections/' was aborted.
+[2017.11.08-19.51.33:298][994]LogModuleManager: Shutting down and abandoning module SceneOutliner (486)
+[2017.11.08-19.51.33:298][994]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2017.11.08-19.51.33:312][994]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2017.11.08-19.51.33:312][994]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2017.11.08-19.51.33:319][994]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2017.11.08-19.51.33:319][994]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2017.11.08-19.51.33:319][994]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2017.11.08-19.51.33:319][994]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2017.11.08-19.51.33:319][994]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2017.11.08-19.51.33:332][994]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2017.11.08-19.51.33:332][994]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2017.11.08-19.51.33:332][994]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2017.11.08-19.51.33:346][994]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2017.11.08-19.51.33:346][994]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2017.11.08-19.51.33:372][994]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2017.11.08-19.51.33:372][994]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2017.11.08-19.51.33:372][994]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2017.11.08-19.51.33:372][994]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2017.11.08-19.51.33:372][994]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2017.11.08-19.51.33:372][994]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2017.11.08-19.51.33:372][994]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2017.11.08-19.51.33:372][994]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2017.11.08-19.51.33:372][994]LogModuleManager: Shutting down and abandoning module Media (443)
+[2017.11.08-19.51.33:372][994]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2017.11.08-19.51.33:372][994]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2017.11.08-19.51.33:372][994]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2017.11.08-19.51.33:372][994]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2017.11.08-19.51.33:416][994]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2017.11.08-19.51.33:416][994]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2017.11.08-19.51.33:416][994]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2017.11.08-19.51.33:416][994]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2017.11.08-19.51.33:416][994]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2017.11.08-19.51.33:432][994]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2017.11.08-19.51.33:443][994]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2017.11.08-19.51.33:469][994]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2017.11.08-19.51.33:469][994]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2017.11.08-19.51.33:469][994]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2017.11.08-19.51.33:469][994]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2017.11.08-19.51.33:485][994]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2017.11.08-19.51.34:250][994]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2017.11.08-19.51.34:250][994]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2017.11.08-19.51.34:250][994]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2017.11.08-19.51.34:263][994]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2017.11.08-19.51.34:285][994]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2017.11.08-19.51.34:305][994]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2017.11.08-19.51.34:306][994]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2017.11.08-19.51.34:306][994]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2017.11.08-19.51.34:306][994]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2017.11.08-19.51.34:314][994]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2017.11.08-19.51.34:329][994]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2017.11.08-19.51.34:341][994]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2017.11.08-19.51.34:352][994]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2017.11.08-19.51.34:361][994]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2017.11.08-19.51.34:361][994]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2017.11.08-19.51.34:361][994]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2017.11.08-19.51.34:376][994]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2017.11.08-19.51.34:376][994]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2017.11.08-19.51.34:376][994]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2017.11.08-19.51.34:376][994]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2017.11.08-19.51.34:390][994]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2017.11.08-19.51.34:412][994]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2017.11.08-19.51.34:430][994]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2017.11.08-19.51.34:446][994]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2017.11.08-19.51.34:456][994]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2017.11.08-19.51.34:503][994]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2017.11.08-19.51.34:530][994]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2017.11.08-19.51.34:545][994]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2017.11.08-19.51.34:560][994]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2017.11.08-19.51.34:560][994]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2017.11.08-19.51.34:583][994]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2017.11.08-19.51.34:583][994]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2017.11.08-19.51.34:609][994]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2017.11.08-19.51.34:609][994]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2017.11.08-19.51.34:651][994]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2017.11.08-19.51.34:665][994]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2017.11.08-19.51.34:665][994]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2017.11.08-19.51.34:665][994]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2017.11.08-19.51.34:676][994]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2017.11.08-19.51.34:685][994]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2017.11.08-19.51.34:695][994]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2017.11.08-19.51.34:700][994]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2017.11.08-19.51.34:700][994]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2017.11.08-19.51.34:700][994]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2017.11.08-19.51.34:701][994]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2017.11.08-19.51.34:701][994]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2017.11.08-19.51.34:701][994]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2017.11.08-19.51.34:701][994]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2017.11.08-19.51.34:701][994]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2017.11.08-19.51.34:709][994]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2017.11.08-19.51.34:720][994]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2017.11.08-19.51.34:720][994]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2017.11.08-19.51.34:951][994]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2017.11.08-19.51.34:973][994]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2017.11.08-19.51.34:973][994]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2017.11.08-19.51.34:973][994]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2017.11.08-19.51.34:973][994]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2017.11.08-19.51.34:985][994]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2017.11.08-19.51.34:985][994]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2017.11.08-19.51.34:985][994]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2017.11.08-19.51.34:985][994]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2017.11.08-19.51.34:985][994]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2017.11.08-19.51.34:985][994]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2017.11.08-19.51.34:985][994]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2017.11.08-19.51.35:013][994]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2017.11.08-19.51.35:013][994]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2017.11.08-19.51.35:026][994]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2017.11.08-19.51.35:026][994]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2017.11.08-19.51.35:026][994]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2017.11.08-19.51.35:026][994]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2017.11.08-19.51.35:026][994]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2017.11.08-19.51.35:026][994]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2017.11.08-19.51.35:026][994]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2017.11.08-19.51.35:049][994]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2017.11.08-19.51.35:061][994]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2017.11.08-19.51.35:061][994]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2017.11.08-19.51.35:061][994]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2017.11.08-19.51.35:061][994]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2017.11.08-19.51.35:061][994]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2017.11.08-19.51.35:070][994]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2017.11.08-19.51.35:085][994]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2017.11.08-19.51.35:096][994]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2017.11.08-19.51.35:112][994]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2017.11.08-19.51.35:112][994]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2017.11.08-19.51.35:112][994]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2017.11.08-19.51.35:112][994]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2017.11.08-19.51.35:131][994]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2017.11.08-19.51.35:143][994]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2017.11.08-19.51.35:164][994]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2017.11.08-19.51.35:189][994]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2017.11.08-19.51.35:189][994]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2017.11.08-19.51.35:199][994]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2017.11.08-19.51.35:201][994]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2017.11.08-19.51.35:212][994]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2017.11.08-19.51.35:212][994]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2017.11.08-19.51.35:212][994]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2017.11.08-19.51.35:313][994]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2017.11.08-19.51.35:429][994]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2017.11.08-19.51.35:455][994]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2017.11.08-19.51.35:468][994]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2017.11.08-19.51.35:468][994]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2017.11.08-19.51.35:468][994]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2017.11.08-19.51.35:485][994]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2017.11.08-19.51.35:485][994]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2017.11.08-19.51.35:486][994]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2017.11.08-19.51.35:486][994]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2017.11.08-19.51.35:486][994]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2017.11.08-19.51.35:498][994]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2017.11.08-19.51.35:498][994]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2017.11.08-19.51.35:498][994]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2017.11.08-19.51.35:535][994]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2017.11.08-19.51.35:535][994]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2017.11.08-19.51.35:548][994]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2017.11.08-19.51.35:548][994]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2017.11.08-19.51.35:549][994]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2017.11.08-19.51.35:549][994]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2017.11.08-19.51.35:574][994]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2017.11.08-19.51.35:574][994]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2017.11.08-19.51.35:574][994]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2017.11.08-19.51.35:605][994]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2017.11.08-19.51.35:605][994]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2017.11.08-19.51.35:609][994]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2017.11.08-19.51.35:625][994]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2017.11.08-19.51.35:625][994]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2017.11.08-19.51.35:625][994]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2017.11.08-19.51.35:625][994]LogModuleManager: Shutting down and abandoning module Core (154)
+[2017.11.08-19.51.35:625][994]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2017.11.08-19.51.35:728][994]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.11.08-19.51.35:728][994]LogDirectoryWatcher: A directory notification for '../../../../../../P - programist/UE4/Timekill/TimeKill/Content/' was aborted.
+[2017.11.08-19.51.35:728][994]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.11.08-19.51.35:745][994]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2017.11.08-19.51.35:749][994]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2017.11.08-19.51.35:749][994]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2017.11.08-19.51.35:749][994]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2017.11.08-19.51.35:764][994]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2017.11.08-19.51.35:775][994]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2017.11.08-19.51.35:775][994]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2017.11.08-19.51.35:775][994]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2017.11.08-19.51.35:787][994]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2017.11.08-19.51.35:868][994]LogDerivedDataCache: Shutdown
+[2017.11.08-19.51.35:868][994]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2017.11.08-19.51.35:868][994]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2017.11.08-19.51.35:882][994]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2017.11.08-19.51.35:888][994]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2017.11.08-19.51.35:888][994]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2017.11.08-19.51.35:902][994]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2017.11.08-19.51.35:902][994]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2017.11.08-19.51.35:902][994]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2017.11.08-19.51.35:902][994]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2017.11.08-19.51.35:906][994]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2017.11.08-19.51.35:906][994]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2017.11.08-19.51.35:906][994]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2017.11.08-19.51.35:906][994]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2017.11.08-19.51.35:915][994]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2017.11.08-19.51.35:934][994]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2017.11.08-19.51.35:934][994]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.11.08-19.51.35:934][994]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.11.08-19.51.35:934][994]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.11.08-19.51.35:934][994]LogOnline:Display: Unloading online subsystem: NULL
+[2017.11.08-19.51.35:954][994]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.11.08-19.51.35:963][994]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.11.08-19.51.35:979][994]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.11.08-19.51.35:979][994]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B511C0B2A-4CC9-2ADF-FDB0-C8AFFE343535%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.3-3450819%2B%2B%2BUE4%2BRelease-4.15&UserID=203cd22846209b4f8b77d28ccf32e6ff%7C89273462bd32443db345d53368ac8829%7Cb72b80ad-e83e-444b-86be-783fb756f975&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.11.08-19.51.35:999][994]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.11.08-19.51.36:008][994]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.11.08-19.51.36:021][994]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.11.08-19.51.36:023][994]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.11.08-19.51.36:023][994]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.11.08-19.51.36:023][994]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.11.08-19.51.36:048][994]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.11.08-19.51.36:065][994]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.11.08-19.51.36:065][994]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.11.08-19.51.36:080][994]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.11.08-19.51.36:080][994]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.11.08-19.51.36:080][994]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.11.08-19.51.36:080][994]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.11.08-19.51.36:080][994]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.11.08-19.51.36:080][994]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.11.08-19.51.36:080][994]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.11.08-19.51.36:102][994]LogExit: Exiting.
+[2017.11.08-19.51.36:109][994]Log file closed, 11/08/17 22:51:36

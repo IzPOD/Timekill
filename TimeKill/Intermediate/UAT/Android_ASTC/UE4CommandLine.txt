@@ -1,0 +1,1 @@
+../../../TimeKill/TimeKill.uproject  /Game/GameLavel -Messaging -SessionId=87935B214676314A55C51F82C46AE3C8 -SessionOwner="IzPOD" -SessionName="Launch On Device"
